@@ -1,0 +1,566 @@
+/* =============================== */
+/* ✅ BASE PAGE */
+/* =============================== */
+body {
+    margin: 0;
+    background-color: #1E1B1C;
+    color: #C5C3C3;
+    font-family: Calibri, sans-serif;
+}
+
+/* CENTERED CONTENT */
+.page-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* =============================== */
+/* ✅ FULL-WIDTH SECTIONS */
+/* =============================== */
+.header,
+.hero,
+.promo-bar,
+.benefits-bar {
+    width: 100%;
+    margin: 0;
+}
+
+/* =============================== */
+/* ✅ HEADER */
+/* =============================== */
+.header {
+    background-color: #FFFFEE;
+}
+
+.header-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+}
+
+/* LEFT SIDE */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-box {
+    background-color: white;
+    padding: 5px;
+}
+
+.logo {
+    width: 55px;
+}
+
+/* TITLE */
+.site-title {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #00231C;
+}
+
+/* NAV */
+.nav a {
+    text-decoration: none;
+    color: #00231C;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav a:hover {
+    color: #AE232D;
+}
+
+/* =============================== */
+/* ✅ HERO */
+/* =============================== */
+.hero {
+    height: 700px;
+
+    background-image: url("rishikesh-yogpeeth-CEGtclvmIII-unsplash-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* CENTERED TEXT */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-content h2 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.hero-button {
+    background-color: #AE232D;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #519C4F;
+}
+
+/* =============================== */
+/* ✅ PROMO BAR */
+/* =============================== */
+.promo-bar {
+    height: 50px;
+    background-color: #00FF00;
+    border: 2px solid #1E1B1C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.promo-item {
+    color: #AC1724;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =============================== */
+/* ✅ CLASSES */
+/* =============================== */
+.classes-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.classes-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.classes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.class-card {
+    text-align: center;
+    width: 30%;
+}
+
+.class-card img {
+    width: 250px;
+}
+
+.class-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* =============================== */
+/* ✅ BENEFITS BAR */
+/* =============================== */
+.benefits-bar {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    height: 50px;
+
+    background-color: #AE232D;
+    border: 2px solid #1E1B1C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.benefit {
+    color: #FFFFEE;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =============================== */
+/* ✅ JOIN SECTION */
+/* =============================== */
+.join-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.join-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.join-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.join-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+.join-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.join-form input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.join-form button {
+    background-color: #AE232D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.join-form button:hover {
+    background-color: #519C4F;
+}
+
+/* =============================== */
+/* ✅ GALLERY HEADER */
+/* =============================== */
+
+.gallery-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.gallery-header h2 {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* =============================== */
+/* ✅ CART BUTTON */
+/* =============================== */
+.cart-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background-color: #00FF00;
+    color: #1E1B1C;
+    border: 2px solid #1E1B1C;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+/* =============================== */
+/* ✅ GALLERY GRID */
+/* =============================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 40px;  
+}
+
+
+/* EACH ITEM */
+.gallery-item img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.gallery-item h3 {
+    margin-top: 10px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.gallery-item button {
+    background-color: #AE232D;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.gallery-item button:hover {
+    background-color: #00FF00;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+/* =============================== */
+/* ✅ ABOUT HEADER */
+/* =============================== */
+.about-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about-header h2 {
+    font-size: 36px;
+}
+
+/* =============================== */
+/* ✅ 2-COLUMN LAYOUT */
+/* =============================== */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+.about-left {
+    width: 60%;
+}
+
+/* RIGHT SIDE */
+.about-right {
+    width: 35%;
+    border: 2px solid #00FF00;
+    padding: 20px;
+}
+
+/* TEXT STYLING */
+.about-left p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.about-left h3 {
+    margin-top: 30px;
+}
+
+/* LIST */
+.about-left ul {
+    margin-top: 10px;
+}
+
+/* =============================== */
+/* ✅ FORM */
+/* =============================== */
+.about-right label {
+    display: block;
+    margin-top: 10px;
+}
+
+.about-right input,
+.about-right textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.about-right button {
+    margin-top: 15px;
+    background-color: #AE232D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.about-right button:hover {
+    background-color: #519C4F;
+}
+
+/* =============================== */
+/* ✅ CLASS PAGE HEADER */
+/* =============================== */
+.classes-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.classes-header h2 {
+    font-size: 36px;
+}
+
+/* =============================== */
+/* ✅ 3-COLUMN SCHEDULE LAYOUT */
+/* =============================== */
+.schedule-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+
+/* LEFT + RIGHT IMAGES */
+.schedule-image img {
+    width: 250px;
+}
+
+/* CENTER SCHEDULE */
+.schedule-list {
+    text-align: center;
+}
+
+.schedule-list p {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.schedule-list button {
+    margin-top: 20px;
+    background-color: #AE232D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.schedule-list button:hover {
+    background-color: #519C4F;
+}
+
+/* =============================== */
+/* ✅ TESTIMONIALS */
+/* =============================== */
+.testimonial-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    background-color: #519C4F;   /* ✅ Gains Green */
+    padding: 30px;
+}
+
+.testimonials div {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1E1B1C;   /* dark text for contrast */
+}
+
+/* =============================== */
+/* ✅ HERO 2 */
+/* =============================== */
+.hero2 {
+    height: 700px;
+
+    background-image: url("Client2_IndividualKickboxing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* =============================== */
+/* ✅ HERO 3 */
+/* =============================== */
+.hero3 {
+    height: 700px;
+
+    background-image: url("Client2_IndividualPilates.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =============================== */
+/* ✅ HERO 4 */
+/* =============================== */
+.hero4 {
+    height: 700px;
+
+    background-image: url("Client2_IndividualYoga.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* =============================== */
+/* ✅ CART MODAL */
+/* =============================== */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-content {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    position: relative;
+}
+
+/* CLOSE BUTTON */
+.close-cart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
