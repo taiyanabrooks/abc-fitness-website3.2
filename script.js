@@ -149,7 +149,7 @@ if (processOrderBtn) {
 
 
 // ===============================
-// ✅ CONTACT FORM (localStorage)
+// ✅ CONTACT FORM (localStorage + validation)
 // ===============================
 const contactForm = document.querySelector(".contact-form");
 
@@ -163,6 +163,13 @@ if (contactForm) {
         const email = contactForm.querySelector('input[type="email"]').value.trim();
         const message = contactForm.querySelector('textarea').value.trim();
 
+        // ✅ check if ANY field is missing
+        if (name === "" || email === "" || message === "") {
+            alert("Please enter your name, email, and message!");
+            return;
+        }
+
+        // ✅ save to localStorage
         const userData = {
             name: name,
             email: email,
@@ -171,6 +178,7 @@ if (contactForm) {
 
         localStorage.setItem("contactData", JSON.stringify(userData));
 
+        // ✅ success message
         alert("Thank you for your message, " + name);
 
     });
